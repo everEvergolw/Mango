@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mango.Services.CouponAPI", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mango.Web", "Mango.Web\Mango.Web.csproj", "{F40E750D-F4CD-487A-A58D-5F17A0DF467B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mango.Services.AuthAPI", "Mango.Services.AuthAPI\Mango.Services.AuthAPI.csproj", "{76366DF7-BF3F-4AEB-B52B-BC43F1EF6D6C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mango.Services.AuthAPI", "Mango.Services.AuthAPI\Mango.Services.AuthAPI.csproj", "{76366DF7-BF3F-4AEB-B52B-BC43F1EF6D6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mango.Services.ProductAPI", "Mango.Services.ProductAPI\Mango.Services.ProductAPI.csproj", "{59777DCD-A06B-4E83-8C37-698D8C24FB88}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +37,10 @@ Global
 		{76366DF7-BF3F-4AEB-B52B-BC43F1EF6D6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{76366DF7-BF3F-4AEB-B52B-BC43F1EF6D6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{76366DF7-BF3F-4AEB-B52B-BC43F1EF6D6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59777DCD-A06B-4E83-8C37-698D8C24FB88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59777DCD-A06B-4E83-8C37-698D8C24FB88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59777DCD-A06B-4E83-8C37-698D8C24FB88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59777DCD-A06B-4E83-8C37-698D8C24FB88}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -43,6 +49,7 @@ Global
 		{8BA3D215-2E99-4612-AE35-850BB3E0A78C} = {7CB2860C-D327-4B80-9438-F29A38495674}
 		{F40E750D-F4CD-487A-A58D-5F17A0DF467B} = {E8D3BCD3-A0CA-4F79-B92C-A71443B801FE}
 		{76366DF7-BF3F-4AEB-B52B-BC43F1EF6D6C} = {7CB2860C-D327-4B80-9438-F29A38495674}
+		{59777DCD-A06B-4E83-8C37-698D8C24FB88} = {7CB2860C-D327-4B80-9438-F29A38495674}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8A9ACBC5-BAD8-484C-B173-A208CD52C1D7}
