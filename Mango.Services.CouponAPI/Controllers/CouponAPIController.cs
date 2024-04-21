@@ -3,6 +3,7 @@ using Azure;
 using Mango.Services.CouponAPI.Data;
 using Mango.Services.CouponAPI.Models;
 using Mango.Services.CouponAPI.Models.Dto;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -10,6 +11,7 @@ namespace Mango.Services.CouponAPI.Controllers
 {
     [Route("api/coupon")]
     [ApiController]
+    [Authorize]
     public class CouponAPIController : ControllerBase
     {
         private readonly AppDbContext _db;
@@ -93,6 +95,7 @@ namespace Mango.Services.CouponAPI.Controllers
 
 
         [HttpPost]
+        [Authorize(Roles = "Admin")]
         public ResponseDto Post([FromBody] CouponDto couponDto)
         {
             try
@@ -119,8 +122,16 @@ namespace Mango.Services.CouponAPI.Controllers
 
 
         [HttpPut]
+        [Authorize(Roles = "Admin")]
+
         public ResponseDto Put([FromBody] CouponDto couponDto)
         {
+                
+                
+                
+                
+                    
+                
             try
             {
                 Coupon obj = _mapper.Map<Coupon>(couponDto);
@@ -129,10 +140,12 @@ namespace Mango.Services.CouponAPI.Controllers
                 _db.SaveChanges();
 
 
+
                 _response.Result = _mapper.Map<CouponDto>(obj);
 
 
             }
+
             catch (Exception ex)
             {
 
@@ -146,6 +159,8 @@ namespace Mango.Services.CouponAPI.Controllers
 
         [HttpDelete]
         [Route("{id:int}")]
+        [Authorize(Roles = "Admin")]
+
         public ResponseDto Delete(int id )
         {
             try
